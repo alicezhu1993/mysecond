@@ -1,3 +1,8 @@
+.table.table-bordered th,
+.table.table-bordered td{
+  text-align: center;
+  vertical-align: middle;
+}
 a:link,
 a:visited,
 a:hover,
@@ -21,6 +26,9 @@ ul{
 }
 .mt_150{
   margin-top: 150px;
+}
+.mb_20{
+  margin-bottom: 20px;
 }
 .panel-title{
   height: 40px;
@@ -71,6 +79,9 @@ ul{
   text-align: center;
   font-size: 18px;
   color: #fff;
+}
+.lt_aside .nav .child{
+  display: none;
 }
 .lt_aside .nav a{
   display: block;

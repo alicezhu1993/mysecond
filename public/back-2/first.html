@@ -22,12 +22,12 @@
   </div>
   <div class="nav">
     <ul>
-      <li><a href="user.html"><i class="glyphicon glyphicon-user"></i><span>用户管理</span></a></li>
+      <li><a href="user.html" class="active"><i class="glyphicon glyphicon-user"></i><span>用户管理</span></a></li>
       <li>
         <a href="javascript:;" class="category"><i class="glyphicon glyphicon-list"></i><span>分类管理</span></a>
-        <div class="child">
+        <div class="child" style="display: block">
           <a href="first.html">一级分类</a>
-          <a href="seconf.html">二级分类</a>
+          <a href="second.html">二级分类</a>
         </div>
       </li>
       <li><a href="product.html"><i class="glyphicon glyphicon-tags"></i><span>商品管理</span></a></li>
@@ -46,7 +46,20 @@
       <li><a href="#">管理系统</a></li>
       <li class="active">首页</li>
     </ol>
-  
+    <div class="lt_content">
+      <button class="btn btn-default mb_20">添加分类</button>
+      <table class="table table-bordered table-hover">
+        <thead>
+        <tr>
+          <th>序号</th>
+          <th>一级分类名</th>
+        </tr>
+        </thead>
+        <tbody>
+    
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
 
@@ -69,14 +82,22 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+<script type="text/html" id="tmp">
+  {{each rows v i}}
+  <tr>
+    <td>{{i+1}}</td>
+    <td>{{v.categoryName}}</td>
+  </tr>
+  {{/each}}
+</script>
 
 <script src="./lib/jquery/jquery.min.js"></script>
 <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
 <script src="./lib/nprogress/nprogress.js"></script>
-<script src="./lib/echarts/echarts.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
 <script src="./js/checkLogin.js"></script>
 <script src="./js/common.js"></script>
-<script src="./js/index.js"></script>
+<script src="./js/first.js"></script>
 </body>
 </html>
