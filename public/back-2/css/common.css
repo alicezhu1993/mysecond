@@ -146,3 +146,7 @@ ul{
   width: auto;
   margin: 0 auto;
 }
+#addModal img{
+  width: auto;
+  height: 100px;
+}
